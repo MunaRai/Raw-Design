@@ -1,10 +1,12 @@
+/* Header Section */
+
 *{
     margin: 0;
     padding: 0;
     font-family: Century Gothic;
 }
 
-header{
+.banner-section{
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../1.jpg);
     background-size: cover; 
@@ -89,35 +91,55 @@ ul li.active a{
     margin-top: 60px;
 }
 
-.aboutme{
-    position: absolute;
-    margin-top: 100px;;
-    left: 20%; 
-    font-size: 12px;
+/* About Me Section */
+
+.aboutme-section{
+    padding: 100px 0;
+}
+.aboutme-section:after{
+    content: "";
+    clear: both;
+    display: table;
 }
 
-.aboutme_section img{
-    margin-left: 800px;
-    margin-top: 80px;
-    margin-bottom: 80px;
+.aboutme-section .content{ 
+    width: 60%;
+    float: left;
 }
 
+.aboutme-section .img{ 
+    width: 40%;
+    float: left;
+    text-align: center;
+}
+
+.aboutme-section .img img{
+    max-width: 100%;
+} 
+
+.aboutme-section h2{
+    margin: 20px 0;
+}
+
+
+
+
+/* Services Section */
 .services{
     background-color: #f2f4f8;
 }
 
-/* .services h1{
-    margin:auto;
-} */
-
-.heading{
-    margin-top: 80px;    
+.services h1{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    font-family: Century Gothic;
 }
 
 .container{
     max-width: 1000px;
     margin: 0 auto;
-    background-color:#fff;
+    background-color: #fff;;
 }
 
 .container .row{
@@ -150,3 +172,183 @@ ul li.active a{
     text-transform: capitalize;
     text-align: left;
 }
+
+/* Skill Section */
+.skill{
+    background-color:rgb(57, 190, 135) ;
+}
+
+.skill .row {
+    width: 1000px;
+    margin: 60px auto;
+    color: white;
+    padding-bottom: 40px;
+}
+
+.skill .row h1{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    font-family: century Gothic;
+}
+
+.skill .row .column{
+    margin: 20px 0px;
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.column li{
+    margin: 20px 0;
+}
+
+.column li  h3{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.skill .row .bar{
+    background: #f4f5f8;
+    display: block;
+    height: 2px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    padding: 3px;
+    box-shadow: 0 0 10px #2187e7b3;
+}
+
+.bar span{
+    height: 2px;
+    float: left;
+    padding: 2px;
+    background:rgb(12, 105, 54);
+}
+
+.photoshop{
+    width: 92%;
+    animation: photoshop 2s;
+}
+
+.illustrator{
+    width: 85%;
+    animation: illustrator 2s;
+}
+
+.after-effect{
+    width: 97%;
+    animation: after-effect 2s;
+}
+
+.html{
+    width: 90%;
+    animation: html 2s;
+}
+
+.css{
+    width: 85%;
+    animation: css 2s;
+}
+
+.javascript{
+    width: 72%;
+    animation: javascript 2s;
+}
+
+@keyframes photoshop{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 92%;
+    }
+}
+
+@keyframes illustrator{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+
+@keyframes after-effect{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 97%;
+    }
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 72%;
+    }
+}
+
+/* Project Section */
+.project h1 {
+    text-align: left;
+}
+
+.project ul{
+    list-style-type: none;
+    float: left;
+    width: 100%;
+}
+
+ul li{
+    /* display: inline-block; */
+    margin-top: 30px;
+}
+
+ul li a{
+    text-decoration: none;
+    /* color: rgb(14, 88, 57); */
+    padding: 5px 10px;
+    /* border: 1px solid transparent; */
+    /* transition: 0.6s ease; */
+}
+
+ul li a:hover{
+    color: rgb(36, 43, 41);
+}
+
+ul li.active a{
+    background-color: rgb(34, 117, 97);
+}
+
+.project .img{
+    float:left; 
+    margin-top: 30px;;
+}
+ 
