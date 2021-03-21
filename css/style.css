@@ -359,13 +359,12 @@ ul li.active a{
 /* Testimonial Section */
 .feedback{
     padding: 40px 0;
-    background: #f1f1f1;
-    color: #434343;
+    background-color: #f1f1f1;
     text-align: center;
 }
 
 .container{
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
     overflow: hidden;
     padding: 25px 20px;
@@ -407,12 +406,24 @@ ul li.active a{
     margin: 0;
     padding: 0;
 }
+.contact .img{
+    margin: 60px 80px;
+    float:left;
+}
+
+.contact h4{
+    margin: 20px 0px;
+}
+
 .contact-box{
     width: 500px;
     background-color: #fff;
     box-shadow: 0 0 20px 0 #999;
     top: 50%;
     left: 50%;
+    float: left;
+    margin-top: 20px;
+    
 }
 
 .contact-box form{
@@ -437,7 +448,6 @@ ul li.active a{
 }
 
 .btn{
-    border-radius: 20px;
     background-color: rgb(19, 95, 79);
     margin-top: 18px;
     margin-bottom: 20px;
